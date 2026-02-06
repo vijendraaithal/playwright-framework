@@ -1,0 +1,17 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright E2E Tests with AI Capabilities incl MCP",
+  "keywords": [
+    "playwright",
+    "playwright-e2e-tests",
+    "playwright-mcp"
+  ],
+  "license": "ISC",
+  "author": "Vijendra Aithal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
