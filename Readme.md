@@ -469,3 +469,42 @@ npm run demo
 [💡] This approach helps you avoid typing long commands repeatedly.
 
 🎯 The first BIG step forward ...
+
+# Playwright Test Runner
+
+Test Runner - we write code/playwright script, there has to be something that runs this code
+1. Playwright has its own built-in Test Runner ( no external runners like Mocha, Jest, Jasmine)
+2. Powerful Config file  (Controls overall test setting including browsers, reports, parallel runs)
+3. among all the functions, test, expect and request - are some of the most used functions
+
+- test fn: for writing tests
+- expect fn: for assertion
+- request fn: for request library, built-in that can be used for API tests, instead of relying on 
+external libraries like axios or supertest
+
+## Most used other imports
+```ts
+export const chromium
+export const firefox
+export const webkit
+export const selectors
+export const devices
+export const errors
+export const request
+export const _electron
+export const _android
+export const test
+export const expect
+export const defineConfig
+export const mergeTests
+export const mergeExpects
+export default playwright.test
+```
+- Press CTRL + Spacebar in `import {test, expect}`
+
+## Documentation
+- Docs and API in playwright website
+- In Docs , search Playwright Test, read the sections
+- to understand methods, click API
+- on right side of the page there will be methods listed
+- API > Playwright Library, on right side there will be properties

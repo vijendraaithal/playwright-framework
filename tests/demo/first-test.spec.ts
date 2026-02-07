@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect} from "@playwright/test";
 
 test("Should load home page with correct tile", async ({ page }) => {
   // Go to Home page
