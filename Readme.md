@@ -500,11 +500,52 @@ export const mergeTests
 export const mergeExpects
 export default playwright.test
 ```
-- Press CTRL + Spacebar in `import {test, expect}`
+- Press CTRL + Spacebar in `import {test, expect}` to see the options
+- we can also click on the test, expect etc with CTRL or CMD ( to see how it is built
+it take to page from in node_modules to some file where the code is written) 10K+ lines are there
+- search export.*, you can see all the thigns that are exported which you can import
+
 
 ## Documentation
-- Docs and API in playwright website
+- Homepage, Docs and API in playwright website
 - In Docs , search Playwright Test, read the sections
 - to understand methods, click API
 - on right side of the page there will be methods listed
 - API > Playwright Library, on right side there will be properties
+
+# The `test()` Function
+Declares a test
+- test takes two arguments `test(title, body)`
+- optionally takes three arguments `test(title, details, body)`
+- @param title - Test title
+- @param details - Additional test details
+- @param body  - test body that take one or two arguments : an object with fixtures and optionally TestInfo.
+- note: details as `{<additiioanl detials like tag>}`
+- body, we will call a async callback function
+- eg: `test('title of the test', async({page}) => {})`
+- as part of fn, we have provided page fixture, an object
+- page, context, request are fixtures
+- inside the function we have tests
+
+## Most common body arguments
+A test body can take one of the following args
+- page
+- context
+- request
+
+### Killer Tip:
+- inside `async({page, })` , press CMD + spacebar or CTRL + spacebar you will see what else can go
+-  baseURL, browser, browserName, context, page, request and many more that preload can go there
+- we are using page fixutre so that we can do `page.goto`, `page.locator().toHaveTitle()` will have title check , `page.locator()`page has locator
+
+
+## testInfo
+
+## details
+- `{}`
+- only annotation or  tag can go 
+- `{tag: "@smoke"}`
+- so when we run smoke test, it will run all the tests that has tag as smoke
+- always go to API, and check the latest, most of methods are listed
+
+
