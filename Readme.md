@@ -578,3 +578,24 @@ the `locator` and `getBy*` methods returns a locator objects
 - always go to API and search for `page`, to see its methods, properties
 - there are deprication , so referring to this document as main soruce of truth
 
+# Locator Objects (aka Selectors)
+- `page.locator()` or `page.getBy*` methods , it returns locator object
+- Locators are the central piece of Playwright's auto-waiting and retry-ability. In a nutshell, locators represent a way to find element(s) on the page at any moment. A locator can be created with `page.locator()` method
+- simple terms, locator represent a way to find elmeentnts
+- find element or find elements and which return element(s) and do some action on it( click , fill etc )
+
+## Most commonly used methods 
+- `.click()` to click on a located element
+- `.fill(value)` fill an input or textarea with specified value
+- `.press(key)` press a keyboard key on the focussed element
+- `.getAttribute(name)` retrieve a specific atrribure from the element
+- `.textContent()` retrieve the raw text content of the element
+- `.isVisible()` check if the element is visible
+- `.isHidden()` check if the element is hidden 
+- `isChecked()` check fit he element is selected(for checkbox or radio)
+- `check()/uncheck()` set checkbox/radio to checked or unchecked
+- `selectOption()` select an option from a dropdown
+- `evaluate(fn)` execute JS in the page context for the matched element
+- `screenshot()` take a screenshot of the matched element
+
+
