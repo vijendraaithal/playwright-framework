@@ -618,3 +618,10 @@ The await keyword is used in JavaScript/TypeScript to pause the execution of an 
 
 - simple words wait till the page or locator method is completed and then go to next step
 
+# Codegen, its usecases
+- records test flow
+- generates the best locators
+## Benefits: 
+- Reduces test writing time drastically 
+- No more brittle/flaky selectors
+- 'Record at cursor' - enables adding locators in the middle of test flow
