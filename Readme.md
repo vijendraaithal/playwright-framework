@@ -609,3 +609,12 @@ the `locator` and `getBy*` methods returns a locator objects
 - eg: `expect(page.locator('\\h1')).toHa` ... this will show up `toHaveText()` and not `toHaveTitle()`
 - Refer: Docs > Guides > Assertions 
 
+# The `await` keyword
+The await keyword is used in JavaScript/TypeScript to pause the execution of an async function until a Promise is resolved(success) or rejected (error). It helps you write asynchronous code that looks
+ and behaves like synchronous code.
+
+1. `await` before every `page` or `locator` action methods ( eg: click, fill etc ...)
+2. `await` before `expect methods`
+
+- simple words wait till the page or locator method is completed and then go to next step
+

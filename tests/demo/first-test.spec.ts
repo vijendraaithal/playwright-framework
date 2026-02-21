@@ -6,7 +6,6 @@ test("Should load home page with correct tile", async ({ page }) => {
 
   // Assert if the title is correct
   await expect(page).toHaveTitle("CURA Healthcare Service");
-  await expect(page).toHave
 
   // Assert header text
   await expect(page.locator("\\h1")).toHaveText("CURA Healthcare Service");
