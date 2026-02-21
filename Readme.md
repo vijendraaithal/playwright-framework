@@ -625,3 +625,27 @@ The await keyword is used in JavaScript/TypeScript to pause the execution of an 
 - Reduces test writing time drastically 
 - No more brittle/flaky selectors
 - 'Record at cursor' - enables adding locators in the middle of test flow
+
+# Codegen - via extension
+- Install VS Code extension
+- In Extension: Playwright Test for VSCode from Microsoft
+- review the extension page in VSCode
+- reload window CMD + SHIFT + P => open command palette and the reload `>reload`
+- green triangle, we can 'Run Test', 'Debug Test', 'Reveal in Finder', 'Add Breakpoint', 'Add Conditional Breakpoint', 'Add Logpoint', 'Add Triggered Breakpoint', 'Copy vscode.dev Link', 'Diff Decorations'...
+- Look for laboratory , flask icon
+- There is "Test Explorer" and "PLAYWRIGHT" window
+
+## Features 
+### Playwright >> TOOLS
+- Pick locator: to get a locator
+- Record New: records a test flow as well, including action and locator
+- Record at cursor: in the middle of execution , we can put cursor and start recording from there
+### Playwright >> PROJECTS
+- Projects - by default chromium will be selected, there are firefox and webkit as well
+### Playwright >> SETUP
+- Run global setup 
+- Clear cache
+### Playwright >> SETTINGS
+- show browser - headed more (one worker)
+- show trace viewer
+- run global setup on each run 
