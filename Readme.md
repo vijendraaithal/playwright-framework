@@ -548,4 +548,33 @@ A test body can take one of the following args
 - so when we run smoke test, it will run all the tests that has tag as smoke
 - always go to API, and check the latest, most of methods are listed
 
+# The page fixtures
+- DRY principle , Don't Repeat Yourself, do not repeat same code ( in same or different file)
+- by default, fixture are created, these are static or one time config , which we do not have to repeat
+- In old times `let chromeBrowser = new ChromeBrowser()`
+- In playwright, we put playwright fixture as test fn argument and use goto() and other methods
+
+## page fixtures
+- a page is a fixture from playwright test runner's perspective, which is passed as an argument to the test object
+- `reqeust, context, browser, baseURL` - can also go as fixtures
+- some of the common user methods of page fixtures
+- `page.goto(url)` - navigates to URL
+- `page.locator(selector)` - create a locator for actions/assertions, css or xpath
+- `page.getByRole(), page.getByText(), page.getByLabel()` - semantic locators for accessibility-based selectors
+- `page.click(selector)` - clicks on a matching element
+- `page.fill(selector, value)` - fills and input field
+- `page.evaluate(fn, arg)` - runs javascript in the browser context
+- `page.waitForURL(url)` - wait for navigation to a specific URL
+- `page.screenshot()` - capture a screenshot
+- `page.title()` - Get the page title
+- `page.url()` - Get the current url
+
+### NOTES 
+the `locator` and `getBy*` methods returns a locator objects
+- so page.locator() returns a locator , so we can chain them with other locator methods
+
+- Fixture => static or one time setup , that need not be re-written
+- page is a fixture, it has its own methods and properties
+- always go to API and search for `page`, to see its methods, properties
+- there are deprication , so referring to this document as main soruce of truth
 
