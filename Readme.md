@@ -598,4 +598,14 @@ the `locator` and `getBy*` methods returns a locator objects
 - `evaluate(fn)` execute JS in the page context for the matched element
 - `screenshot()` take a screenshot of the matched element
 
+# Expect function
+- used for assertion
+- any test should have valid assertion
+- `expect(actual: any): Matchers<unknown>)`
+- expect method takes any type of 'value'( eg: page, locator, number, storing, object, array) and then returns a Matchers
+- Depends on the return type of the matchers, the assertions methods can be used, relevant methods get preloaded
+- if we provide a page, then page related assertions eg page to have url , page to have title
+- eg: `expect(page).toHa` ... this will show up `toHaveTitle()` and not `toHaveText()`
+- eg: `expect(page.locator('\\h1')).toHa` ... this will show up `toHaveText()` and not `toHaveTitle()`
+- Refer: Docs > Guides > Assertions 
 
